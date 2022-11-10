@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="list-group col-12">
+      <a
+        *ngFor="let pizza of pizzas; let i = index"
+        href="#"
+        class="list-group-item list-group-item-action"
+        (click)="onPizzaClick(i)"
+      >
+        {{ pizza.name }}
+      </a>
+    </div>
+    <hr />
+    <div class="container row my-2">
+      <button class="btn btn-success col-12">Ajouter une Pizza</button>
+    </div>
+  </div>
+</div>
